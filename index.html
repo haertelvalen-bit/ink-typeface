@@ -376,6 +376,8 @@ footer{font-size:10px;letter-spacing:.06em;height:40px}
 main{height:calc(100vh - 176px);height:calc(100svh - 176px)}
 /* Ticker: 8 copies, scrolls half (4 copies, wider than any screen) for a seamless loop. */
 .ticker>div{animation-duration:144s}
+/* Each step reads as one line: no orphan word under the description. */
+.editorial{max-width:280px}.how li>span{white-space:nowrap}
 
 </style>
   
@@ -461,7 +463,7 @@ main{height:calc(100vh - 176px);height:calc(100svh - 176px)}
   </header>
   <main>
     <section class="workspace" aria-label="Interactive typography playground">
-      <div class="editorial"><span class="eyebrow"><i></i> PROCEDURAL TYPE TOOL</span><h1 aria-label="Type as matter">TYPE<br>AS<br><em>MATTER.</em></h1><p class="intro">A grid of points built from the real coordinates of the INK typeface.</p><ol class="how"><li><b>MOVE</b> <span>the grid reacts to the cursor</span></li><li><b>DRAG</b> <span>stretch the letter</span></li><li><b>RELEASE</b> <span>points ease back to the font</span></li><li><b>EXPORT</b> <span>save the result as SVG</span></li></ol></div>
+      <div class="editorial"><span class="eyebrow"><i></i> PROCEDURAL TYPE TOOL</span><h1 aria-label="Type as matter">TYPE<br>AS<br><em>MATTER.</em></h1><p class="intro">A grid of points built from the real coordinates of the INK typeface.</p><ol class="how"><li><b>MOVE</b> <span>the grid follows the cursor</span></li><li><b>DRAG</b> <span>stretch the letter</span></li><li><b>RELEASE</b> <span>it returns to the font</span></li><li><b>EXPORT</b> <span>save the result as SVG</span></li></ol></div>
       <div class="play-tools" aria-label="Play tools">
         <div class="legacy-tools"><div class="tool-heading">TOUCH THE TYPE <span>01—04</span></div>
         <div id="tools"><button data-tool="repel" aria-pressed="false" title="Push particles (1)"><svg class="icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><use href="#i-ne"/></svg> <span>PUSH</span></button><button data-tool="attract" aria-pressed="false" title="Attract particles (2)"><svg class="icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><use href="#i-attract"/></svg> <span>ATTRACT</span></button><button data-tool="vortex" aria-pressed="false" title="Swirl particles (3)"><svg class="icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><use href="#i-swirl"/></svg> <span>SWIRL</span></button><button data-tool="drag" aria-pressed="true" title="Grab and stretch the letter (4)"><svg class="icon" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><use href="#i-drag"/></svg> <span>DRAG</span></button></div>
